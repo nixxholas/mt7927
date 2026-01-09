@@ -33,6 +33,7 @@ obj-m += 04_risky_ops/test_mt7925_firmware.o
 obj-m += 04_risky_ops/mt7927_wrapper.o
 obj-m += 04_risky_ops/mt7927_init.o
 obj-m += 04_risky_ops/mt7927_init_dma.o
+obj-m += 04_risky_ops/mt7927_mcu_fw.o
 
 # Exploration tools
 obj-m += tools/mt7927_data_dumper.o

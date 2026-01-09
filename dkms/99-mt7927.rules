@@ -1,0 +1,5 @@
+# udev rule to load mt7927_shim when MT7927 device is detected
+# Install to: /etc/udev/rules.d/99-mt7927.rules
+
+# When MT7927 is added, load the shim module
+ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x14c3", ATTR{device}=="0x7927", RUN+="/sbin/modprobe mt7925e", RUN+="/sbin/modprobe mt7927_shim"
